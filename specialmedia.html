@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>특강영상 - 어머니기도회</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1 {
+      color: #007BFF;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .video-playlist {
+      margin: 0 auto;
+      max-width: 640px;
+      aspect-ratio: 16 / 9; /* 최신 브라우저에서 반응형 비디오를 위한 속성 */
+    }
+    .video-playlist iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    /* 반응형 대응 */
+    @media (max-width: 768px) {
+      .video-playlist {
+        max-width: 100%;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>더행복한 어머니기도회</h1>
+    <p>
+      더행복한교회의 다양한 특강 영상 모음입니다.</p>  
+      <p>어머니기도회를 비롯하여 신앙과 삶에 도움이 되는 귀한 강의들을 시청해 보세요.
+    </p>
+    
+    <div class="video-playlist">
+      <!-- 유튜브 Playlist Embed -->
+      <iframe 
+        src="https://www.youtube.com/embed?listType=playlist&list=PLex-3x8xDI_Fs-d4FS6xNAnSPj7EvcY9L"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+    
+    <p>
+      더 많은 영상은  
+      <a href="https://www.youtube.com/playlist?list=PLex-3x8xDI_Fs-d4FS6xNAnSPj7EvcY9L" target="_blank">유튜브 채널</a>
+      에서 확인하세요.
+    </p>
+  </div>
+</body>
+</html>

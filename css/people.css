@@ -1,0 +1,82 @@
+{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  /* 프로필 카드 전체 박스 */
+  .profile-card {
+    display: flex;
+    flex-direction: column;  /* 세로 배치 */
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+  /* 사진 영역: 컨테이너 너비에 맞게 100% 적용 */
+  .profile-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .profile-image img {
+    width: 100%; /* 컨테이너 너비에 따라 자동 확장 */
+    height: auto;
+    border-radius: 6px;
+    display: block;
+  }
+  /* 목사님 정보 텍스트 영역 */
+  .profile-info {
+    width: 100%;
+  }
+  .profile-info h3 {
+    font-size: 1.0em;   /* 소제목 크기 조금 작게 */
+    color: #333;
+    margin: 20px 0 5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+  }
+  .profile-info p {
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  /* 영상(라디오) 목록 구역 */
+  .media-section h3 {
+    font-size: 1.0em;
+    color: #333;
+    margin: 20px 0 5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+  }
+  .media-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .media-section li {
+    font-size: 0.9em;
+    margin-bottom: 6px;
+  }
+  .media-section a {
+    color: #444;
+    text-decoration: none;
+  }
+  .media-section a:hover {
+    text-decoration: underline;
+  }
+  /* 반응형 (모바일) */
+  @media (max-width: 600px) {
+    .profile-info h3,
+    .media-section h3 {
+      margin-top: 15px;
+    }
+  }

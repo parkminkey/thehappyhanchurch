@@ -1,0 +1,134 @@
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* 고정 헤더, 푸터 */
+  header, footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background: #f8f8f8;
+    z-index: 9999;
+  }
+  header {
+    top: 0;
+  }
+  footer {
+    bottom: 0;
+  }
+  
+  /* 헤더 내부 구성 */
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .logo a {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 네비게이션 */
+  nav {
+    display: inline-block;
+    background: #f8f8f8;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  nav ul li a:hover {
+    color: #007BFF;
+  }
+  
+  /* 드롭다운 */
+  .dropdown:hover .dropdown-menu,
+  .dropdown-menu:hover {
+    display: block;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    z-index: 10000;
+  }
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    white-space: nowrap;
+    color: #333;
+  }
+  .dropdown-menu li a:hover {
+    background: #e6e6e6;
+    color: #007BFF;
+  }
+  
+  /* 메인 콘텐츠 */
+  .main-content {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  #contentFrame {
+    width: 100%;
+    height: calc(100vh - 160px);
+    border: none;
+  }
+  
+  /* 푸터 */
+  footer .footer-container {
+    text-align: center;
+    padding: 10px 0;
+  }
+  footer .footer-container p {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0;
+  }
+  
+  /* 반응형 */
+  @media (max-width: 768px) {
+    .logo a {
+      font-size: 1.5em;
+    }
+    nav ul {
+      gap: 10px;
+    }
+  }
+
+  

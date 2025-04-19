@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>더행복한교회 홈페이지</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- 고정 헤더 -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <!-- 로고 클릭 시 home (main.html) 로드 -->
+        <a onclick="loadPage('main.html')">더행복한교회</a>
+      </div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a>교회소개 ▾</a>
+            <ul class="dropdown-menu">
+              <li><a onclick="loadPage('introduce.html')">교회소개</a></li>
+              <li><a onclick="loadPage('people.html')">섬기는사람</a></li>
+              <li><a onclick="loadPage('worshipinfo.html')">예배안내</a></li>
+            </ul>
+          </li>
+          <li><a onclick="loadPage('jesus.html')">예수님소개</a></li>
+          <li class="dropdown">
+            <a>더행복한미디어 ▾</a>
+            <ul class="dropdown-menu">
+              <li><a onclick="loadPage('sermon.html')">설교영상</a></li>
+              <li><a onclick="loadPage('lecture.html')">강의영상</a></li>
+              <li><a onclick="loadPage('event.html')">행사영상</a></li>
+              <li><a onclick="loadPage('praise_media.html')">찬양영상</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a>공동체나눔 ▾</a>
+            <ul class="dropdown-menu">
+              <li><a onclick="loadPage('bulletin.html')">교회주보</a></li>
+              <li><a onclick="loadPage('gallery.html')">공동체갤러리</a></li>
+              <li><a onclick="loadPage('resources.html')">교회자료</a></li>
+              <li><a onclick="loadPage('events.html')">교회행사</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a>어머니기도회 ▾</a>
+            <ul class="dropdown-menu">
+              <li><a onclick="loadPage('specialmedia.html')">특강영상</a></li>
+              <li><a onclick="loadPage('momsprayer.html')">엄마기도자료</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a>신앙교육 ▾</a>
+            <ul class="dropdown-menu">
+              <li><a onclick="loadPage('westminster.html')">웨스트민스터교리문답</a></li>
+              <li><a onclick="loadPage('newcity.html')">뉴시티교리문답</a></li>
+              <li><a onclick="loadPage('biblechant.html')">성경챈트</a></li>
+            </ul>
+          </li>
+          <li><a onclick="loadPage('speciallecture.html')">특별한 강의</a></li>
+          <li><a onclick="loadPage('worship.html')">Worship &amp; Praise</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 (iframe 영역) -->
+  <div class="main-content">
+    <iframe id="contentFrame" src="main.html"></iframe>
+  </div>
+
+  <!-- 고정 푸터 -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 더행복한교회. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+  <script src="js/main.js"></script>
+</body>
+</html>
